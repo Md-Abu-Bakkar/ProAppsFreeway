@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProAppsFreeway - Download Premium APKs for Free | Mod Apps | Tech Tools</title>
+    <meta name="description" content="Download premium Android apps for free. Get mod APKs, customized apps, and tech tools. Created by Md. Abubakkar - Professional App Developer from Bangladesh.">
+    <meta name="keywords" content="free apk download, mod apps, premium apps free, android tools, bangla apps, SmartCalculator BD, imo Alpha, imo Pink, TipsBD25, Md. Abubakkar">
+    <meta name="author" content="Md. Abubakkar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ProAppsFreeway - Premium APKs for Free">
+    <meta property="og:description" content="Download premium Android apps for free. Created by Md. Abubakkar - Professional App Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://md-abu-bakkar.github.io/ProAppsFreeway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-accent: #F0B90B;
+            --primary-bg: #181A20;
+            --secondary-bg: #1E2329;
+            --primary-text: #EAECEF;
+            --secondary-text: #848E9C;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--primary-bg);
+            color: var(--primary-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: var(--secondary-bg);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            color: var(--primary-accent);
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--primary-text);
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: var(--primary-text);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-accent);
+            background-color: rgba(240, 185, 11, 0.1);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--primary-text);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            flex: 1;
+            width: 100%;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--primary-bg) 100%);
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(240, 185, 11, 0.1);
+        }
+        
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-accent);
+            line-height: 1.3;
+        }
+        
+        .hero p {
+            color: var(--secondary-text);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+        }
+        
+        .section-title {
+            font-size: 1.7rem;
+            margin: 2rem 0 1.5rem;
+            color: var(--primary-accent);
+            position: relative;
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background-color: var(--primary-accent);
+            border-radius: 5px;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.8rem;
+            margin-top: 1.5rem;
+        }
+        
+        .app-card {
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border-color: rgba(240, 185, 11, 0.3);
+        }
+        
+        .app-image-container {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+        
+        .app-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom: 2px solid var(--primary-accent);
+            transition: transform 0.5s;
+        }
+        
+        .app-card:hover .app-image {
+            transform: scale(1.05);
+        }
+        
+        .app-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .app-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary-accent);
+            font-weight: 600;
+        }
+        
+        .app-description {
+            color: var(--secondary-text);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            white-space: pre-line;
+            flex-grow: 1;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary-accent);
+            color: var(--primary-bg);
+            padding: 0.7rem 1.3rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            width: 100%;
+            text-align: center;
+            border: 2px solid transparent;
+            font-size: 0.95rem;
+        }
+        
+        .download-btn:hover {
+            background-color: transparent;
+            color: var(--primary-accent);
+            border-color: var(--primary-accent);
+            transform: translateY(-2px);
+        }
+        
+        .premium-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: var(--primary-accent);
+            color: var(--primary-bg);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            z-index: 2;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .ad-container {
+            margin: 2.5rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90px;
+            background-color: var(--secondary-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .ad-placeholder {
+            color: var(--secondary-text);
+            padding: 1rem;
+            text-align: center;
+            width: 100%;
+        }
+        
+        footer {
+            background-color: var(--secondary-bg);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .footer-text {
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+        
+        .footer-links a {
+            color: var(--secondary-text);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-accent);
+        }
+        
+        .developer-profile {
+            background-color: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            border: 1px solid rgba(240, 185, 11, 0.1);
+        }
+        
+        .developer-header {
+            display: flex;
+            align-items: center;
+            gap: 1.8rem;
+            margin-bottom: 1.8rem;
+        }
+        
+        .developer-avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-accent);
+            box-shadow: 0 4px 15px rgba(240, 185, 11, 0.2);
+        }
+        
+        .developer-name {
+            font-size: 1.9rem;
+            color: var(--primary-accent);
+            margin-bottom: 0.3rem;
+        }
+        
+        .developer-title {
+            color: var(--secondary-text);
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+        
+        .developer-bio {
+            margin-bottom: 1.8rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .developer-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 1.2rem 0;
+        }
+        
+        .skill-tag {
+            background-color: rgba(240, 185, 11, 0.15);
+            color: var(--primary-accent);
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(240, 185, 11, 0.3);
+        }
+        
+        .developer-projects {
+            margin-top: 2.5rem;
+        }
+        
+        .project-card {
+            background-color: rgba(30, 35, 41, 0.5);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.2rem;
+            border-left: 4px solid var(--primary-accent);
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateX(5px);
+        }
+        
+        .project-title {
+            font-size: 1.25rem;
+            color: var(--primary-accent);
+            margin-bottom: 0.7rem;
+            font-weight: 600;
+        }
+        
+        .project-description {
+            color: var(--secondary-text);
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+        
+        .project-link {
+            color: var(--primary-accent);
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 0.5rem;
+            font-weight: 500;
+            transition: transform 0.3s;
+        }
+        
+        .project-link:hover {
+            transform: translateX(5px);
+        }
+        
+        .project-link i {
+            margin-left: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .project-link:hover i {
+            transform: translateX(3px);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-link {
+            color: var(--primary-text);
+            background-color: var(--secondary-bg);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1.1rem;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-3px);
+            color: var(--primary-accent);
+            border-color: var(--primary-accent);
+            box-shadow: 0 5px 15px rgba(240, 185, 11, 0.2);
+        }
+        
+        .policy-section {
+            background-color: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2.5rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .policy-section h2 {
+            color: var(--primary-accent);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .policy-section h3 {
+            color: var(--primary-text);
+            margin: 1.8rem 0 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .policy-section p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+            color: var(--secondary-text);
+        }
+        
+        .policy-section ul {
+            margin-left: 1.8rem;
+            margin-bottom: 1.8rem;
+            color: var(--secondary-text);
+            line-height: 1.8;
+        }
+        
+        .policy-section li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: var(--primary-accent);
+            color: var(--primary-bg);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 99;
+            border: 2px solid transparent;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-bg);
+        }
+        
+        /* Loading spinner */
+        .loader {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 3px solid rgba(240, 185, 11, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--primary-accent);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 992px) {
+            .container {
+                padding: 1.2rem;
+            }
+            
+            .hero {
+                padding: 2rem 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+            
+            .apps-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+            }
+            
+            .logo {
+                font-size: 1.6rem;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: var(--secondary-bg);
+                flex-direction: column;
+                padding: 1rem;
+                gap: 0.5rem;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                z-index: 99;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links a {
+                padding: 0.8rem;
+                border-radius: 5px;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .developer-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+            
+            .developer-avatar {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .developer-name {
+                font-size: 1.7rem;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .footer-links {
+                gap: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .developer-name {
+                font-size: 1.5rem;
+            }
+            
+            .developer-bio {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <i class="fas fa-download logo-icon"></i>
+            Pro<span>AppsFreeway</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="#premium-apps"><i class="fas fa-crown"></i> Premium Apps</a>
+            <a href="#ad-supported-apps"><i class="fas fa-ad"></i> Ad-Supported</a>
+            <a href="#developer"><i class="fas fa-user-tie"></i> Developer</a>
+            <a href="#privacy"><i class="fas fa-shield-alt"></i> Privacy</a>
+            <a href="#terms"><i class="fas fa-file-contract"></i> Terms</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="hero">
+            <h1>Download Premium APKs for Free</h1>
+            <p>Get access to exclusive premium Android applications without paying anything. Our collection includes mod apps, customized versions, and useful tech tools.</p>
+        </section>
+        
+        <div class="ad-container">
+            <!-- Ad Banner 1 -->
+            <div id="ad-banner-1">
+                <div class="ad-placeholder">
+                    <div class="loader"></div> Loading Ad...
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">
+            <i class="fas fa-crown"></i> Premium Apps - No Ads
+        </h2>
+        <div class="apps-grid" id="premium-apps">
+            <!-- Premium apps will be added here dynamically -->
+            <div class="loading-placeholder">
+                <div class="loader"></div> Loading apps...
+            </div>
+        </div>
+        
+        <div class="ad-container">
+            <!-- Ad Banner 2 -->
+            <div id="ad-banner-2">
+                <div class="ad-placeholder">
+                    <div class="loader"></div> Loading Ad...
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">
+            <i class="fas fa-ad"></i> Premium Apps With Ads
+        </h2>
+        <div class="apps-grid" id="ad-supported-apps">
+            <!-- Ad-supported apps will be added here dynamically -->
+            <div class="loading-placeholder">
+                <div class="loader"></div> Loading apps...
+            </div>
+        </div>
+        
+        <div class="ad-container">
+            <!-- Ad Banner 3 -->
+            <div id="ad-banner-3">
+                <div class="ad-placeholder">
+                    <div class="loader"></div> Loading Ad...
+                </div>
+            </div>
+        </div>
+        
+        <!-- Developer Profile Section -->
+        <section class="developer-profile" id="developer">
+            <div class="developer-header">
+                <img src="https://i.ibb.co/NnpwgmgJ/IMG-20250704-143927.png" alt="Md. Abubakkar" class="developer-avatar">
+                <div>
+                    <h2 class="developer-name">Md. Abu Bakkar</h2>
+                    <p class="developer-title">App Developer | Web Creator | Tech Content Maker</p>
+                    <div class="social-links">
+                        <a href="https://x.com/AbuBokka_Dev" class="social-link" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/md.abu.bokkar.bd25" class="social-link" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mdabubakkar" class="social-link" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@tipsbd25" class="social-link" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/mdabubakkar.25" class="social-link" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://t.me/working_online_earning_bd" class="social-link" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="developer-bio">
+                I'm a passionate app and web developer from Bangladesh, focused on building tools that serve local users with global quality. I'm the creator of SmartCalculator BD, and I work on customized versions of popular apps like imo Alpha / Pink. I also run the TipsBD25 YouTube channel, where I share app reviews, tech tutorials, and online earning tips.
+            </p>
+            
+            <div class="developer-skills">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">Android (Java/Kotlin)</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Photoshop</span>
+                <span class="skill-tag">SEO</span>
+                <span class="skill-tag">UI/UX Design</span>
+                <span class="skill-tag">APK Customization</span>
+                <span class="skill-tag">Bangla App Development</span>
+            </div>
+            
+            <div class="developer-projects">
+                <h3 class="section-title">
+                    <i class="fas fa-project-diagram"></i> Key Projects
+                </h3>
+                
+                <div class="project-card">
+                    <h4 class="project-title">SmartCalculator BD</h4>
+                    <p class="project-description">Multi-feature calculator specially designed for Bangla users with advanced functionality.</p>
+                    <a href="https://md-abu-bakkar.github.io/SmartCalculatorBD.apk/" class="project-link" target="_blank">
+                        Download APK <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="project-card">
+                    <h4 class="project-title">imo Alpha / Pink Mods</h4>
+                    <p class="project-description">Custom imo apps with enhanced features and personalized interface.</p>
+                    <a href="https://appteka.store/get/e2VZ27I-CKBT01Tk1Vmu_5lYJNqRW_CqGniNc98Ot7K_bRZAazhga3DmsWrgJYqmLHisMqbWJ7QRgN6wBdsn/com.imo.android.imoin_2022.09.1078_22091078.apk" class="project-link" target="_blank">
+                        Download imo Pink <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="project-card">
+                    <h4 class="project-title">TipsBD25 YouTube Channel</h4>
+                    <p class="project-description">Tech videos, app reviews, and online earning guides for Bangla audience.</p>
+                    <a href="https://youtube.com/@tipsbd25" class="project-link" target="_blank">
+                        Visit Channel <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <h3 class="section-title">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </h3>
+                <p>Email: <a href="mailto:abubakkar678121@gmail.com" style="color: var(--primary-accent);">abubakkar678121@gmail.com</a></p>
+            </div>
+        </section>
+        
+        <!-- Privacy Policy Section -->
+        <section class="policy-section" id="privacy">
+            <h2><i class="fas fa-shield-alt"></i> Privacy Policy</h2>
+            <p>Last Updated: January 2025</p>
+            
+            <h3>1. Information Collection</h3>
+            <p>We may collect non-personal information about your device, including IP address, browser type, and operating system for analytics purposes.</p>
+            
+            <h3>2. Third-Party Services</h3>
+            <p>This website uses third-party advertising services that may use cookies and tracking technologies. These services have their own privacy policies.</p>
+            
+            <h3>3. APK Files</h3>
+            <p>All APK files provided are for educational purposes only. We recommend scanning files with antivirus software before installation.</p>
+            
+            <h3>4. Changes to Policy</h3>
+            <p>We reserve the right to modify this privacy policy at any time. Changes will be posted on this page.</p>
+        </section>
+        
+        <!-- Terms and Conditions Section -->
+        <section class="policy-section" id="terms">
+            <h2><i class="fas fa-file-contract"></i> Terms and Conditions</h2>
+            <p>Last Updated: January 2025</p>
+            
+            <h3>1. Use of Content</h3>
+            <p>All content on this website is provided for personal, non-commercial use only. Redistribution or modification of APK files is prohibited.</p>
+            
+            <h3>2. Disclaimer</h3>
+            <p>We are not responsible for any damage to devices resulting from downloaded applications. Use at your own risk.</p>
+            
+            <h3>3. Copyright</h3>
+            <p>All original content on this website is property of ProAppsFreeway. APK files are property of their respective developers.</p>
+            
+            <h3>4. External Links</h3>
+            <p>We are not responsible for content on external websites linked from this platform.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="#developer"><i class="fas fa-user-tie"></i> Developer</a>
+            <a href="#privacy"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+            <a href="#terms"><i class="fas fa-file-contract"></i> Terms</a>
+            <a href="mailto:abubakkar678121@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <p class="footer-text">© 2025 ProAppsFreeway. All rights reserved.</p>
+        <p class="footer-text">Created by Md. Abu Bakkar - App Developer & Tech Content Creator</p>
+    </footer>
+    
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <script>
+        // App data with proper formatting
+        const premiumApps = [
+            {
+                name: "Lightroom Pro",
+                image: "https://i.ibb.co/VYG5QP1M/Screenshot-2025-07-04-14-45-16-50-b5a5c5cb02ca09c784c5d88160e2ec24.jpg",
+                description: "Adobe Lightroom v10.9.2 (Premium Unlocked)\n\n🔓 All Premium Features Unlocked\n🎨 Masking, Lens Blur, Batch & Video Editing\n📸 150+ HQ Presets, RAW & Perspective Tools\n📤 Share Anywhere | No Ads | No Trackers\n📱 Android 8.0+ | ARM64-v8a | Clean & Optimized.",
+                downloadLink: "https://uploadrar.com/911py6ub7v9s"
+            },
+            {
+                name: "Hypic Pro",
+                image: "https://i.ibb.co/1t6ZHnBQ/Screenshot-2025-07-04-20-47-25-70-b5a5c5cb02ca09c784c5d88160e2ec24.jpg",
+                description: "Hypic Photo Editor v5.8.3 (VIP Unlocked)\n\n🖼️ All VIP Features | AI Art & Filters\n💎 Stable & Clean Mod | No Ads/Trackers\n📱 Android 5.0+ | ARMv7 & ARM64\n⚡ Optimized for Fast Loading\n🔁 Backup Channel Available.",
+                downloadLink: "https://uploadrar.com/8p73ph00f7nj"
+            },
+            {
+                name: "CapCut Pro",
+                image: "https://i.ibb.co/LhbX3T8K/Screenshot-2025-07-04-15-18-32-38-b5a5c5cb02ca09c784c5d88160e2ec24.jpg",
+                description: "CapCut Video Editor v14.6.0 (Pro Unlocked)\n\n🎬 All Pro Features | Export Fixed\n🎥 All Templates Work | No Ads/Trackers\n🌍 No Region Limit\n📱 Android 5.0+ | ARMv7 & ARM64\n⚡ Optimized & Stable.",
+                downloadLink: "https://uploadrar.com/1xeurtrl575q"
+            },
+            {
+                name: "VITA Pro",
+                image: "https://i.ibb.co/v6H0dF2H/Screenshot-2025-07-04-15-34-54-93-b5a5c5cb02ca09c784c5d88160e2ec24.jpg",
+                description: "VITA Video Editor v304.0.20 (Premium Unlocked)\n\n🎞️ All Premium Features\n🚫 No Ads/Trackers\n💎 Stable & Clean Mod\n📱 Android 8.0+ | ARMv7 & ARM64\n⚡ Optimized for Fast Loading.",
+                downloadLink: "https://uploadrar.com/bgc5qd7ahlb9"
+            },
+            {
+                name: "PowerDirector Pro",
+                image: "https://i.ibb.co/MyPsmhTX/Screenshot-2025-07-04-15-54-17-66-b5a5c5cb02ca09c784c5d88160e2ec24.jpg",
+                description: "PowerDirector v15.6.1 (Premium Unlocked)\n\n🎞️ AI Tools, 400+ Filters\n🎬 Motion Titles, Speed Curve\n🚫 No Watermark | No Ads/Trackers\n📱 Android 8.0+ | Universal CPU\n⚡ Optimized & Clean Mod.",
+                downloadLink: "https://uploadrar.com/yutyau8j0z2f"
+            }
+        ];
+        
+        const adSupportedApps = [
+            {
+                name: "imo Pink Mod",
+                image: "https://i.ibb.co/fG4RMYY0/058f1b443982b303189ceb0b791c01401336de4e.png",
+                description: "imo Pink Mod v12.5.2 (AdSupported)\n\n💖 Pink Themed Interface\n📞 Enhanced Calling Features\n📷 Improved Media Sharing\n⚠️ Contains Ads\n📱 Android 5.0+",
+                downloadLink: "https://appteka.store/get/e2VZ27I-CKBT01Tk1Vmu_5lYJNqRW_CqGniNc98Ot7K_bRZAazhga3DmsWrgJYqmLHisMqbWJ7QRgN6wBdsn/com.imo.android.imoin_2022.09.1078_22091078.apk"
+            },
+            {
+                name: "SmartCalculator BD",
+                image: "https://i.ibb.co/7NrJXbF3/20250616-165636.png",
+                description: "SmartCalculator BD v3.2.1\n\n🧮 Advanced Calculator for BD Users\n📊 Currency Converter\n⏱️ Stopwatch & Timer\n⚠️ Contains Ads\n📱 Android 4.4+",
+                downloadLink: "https://md-abu-bakkar.github.io/SmartCalculatorBD.apk/"
+            },
+            {
+                name: "Lexis Audio Editor Pro",
+                image: "https://i.ibb.co/tpgXNNyn/IMG-20250704-204043.jpg",
+                description: "Lexis Audio Editor v… (AdFree / Free Version)\n\n🎧 Noise Reduction, Trim, EQ\n🎵 MP3 Export not included\n🚫 No Ads\n📱 Android 5.0+\n💎 Clean & Lightweight",
+                downloadLink: "https://uploadrar.com/t5qcqjtljt5s"
+            },
+            {
+                name: "PixelLab Pro",
+                image: "https://i.ibb.co/VpcZThTR/Screenshot-2025-07-04-15-06-55-42-b5a5c5cb02ca09c784c5d88160e2ec24.jpg",
+                description: "PixelLab: Picture Editor v2.1.8 (AdFree)\n\n🎯 No Ads | All Paid Features Unlocked\n💎 Stable & Clean Mod | No Trackers\n📱 Android 5.0+ | Universal CPU\n⚡ Optimized for Fast Loading.",
+                downloadLink: "https://uploadrar.com/1agg50whj7sk"
+            }
+        ];
+
+        // Function to create app cards with fallback images
+        async function createAppCard(app, isPremium) {
+            // Check if image exists, otherwise use placeholder
+            const img = new Image();
+            await new Promise((resolve) => {
+                img.onload = resolve;
+                img.onerror = resolve;
+                img.src = app.image;
+            });
+            
+            const imageUrl = img.naturalWidth > 0 ? app.image : 'https://via.placeholder.com/300x160/1E2329/F0B90B?text=App+Image';
+            
+            return `
+                <div class="app-card">
+                    ${isPremium ? '<span class="premium-badge">PREMIUM</span>' : ''}
+                    <div class="app-image-container">
+                        <img src="${imageUrl}" alt="${app.name}" class="app-image" loading="lazy">
+                    </div>
+                    <div class="app-content">
+                        <h3 class="app-title">${app.name}</h3>
+                        <p class="app-description">${app.description}</p>
+                        <a href="${app.downloadLink}" class="download-btn" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-download"></i> Download Now
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Function to render apps with error handling
+        async function renderApps() {
+            const premiumContainer = document.getElementById('premium-apps');
+            const adSupportedContainer = document.getElementById('ad-supported-apps');
+            
+            try {
+                // Clear loading placeholders
+                premiumContainer.innerHTML = '';
+                adSupportedContainer.innerHTML = '';
+                
+                // Render premium apps
+                for (const app of premiumApps) {
+                    premiumContainer.innerHTML += await createAppCard(app, true);
+                }
+                
+                // Render ad-supported apps
+                for (const app of adSupportedApps) {
+                    adSupportedContainer.innerHTML += await createAppCard(app, false);
+                }
+            } catch (error) {
+                console.error("Error rendering apps:", error);
+                // Show error message if rendering fails
+                premiumContainer.innerHTML = '<p style="color: var(--primary-accent); text-align: center;">Failed to load apps. Please try again later.</p>';
+                adSupportedContainer.innerHTML = '<p style="color: var(--primary-accent); text-align: center;">Failed to load apps. Please try again later.</p>';
+            }
+        }
+
+        // Function to load ads
+        function loadAds() {
+            try {
+                // Ad Banner 1
+                const adScript1 = document.createElement('script');
+                adScript1.type = 'text/javascript';
+                adScript1.innerHTML = `
+                    atOptions = {
+                        'key': 'c949739cfbc90099b78fd03e56e0c06f',
+                        'format': 'iframe',
+                        'height': 90,
+                        'width': 728,
+                        'params': {}
+                    };
+                `;
+                document.getElementById('ad-banner-1').appendChild(adScript1);
+                
+                const adInvoke1 = document.createElement('script');
+                adInvoke1.type = 'text/javascript';
+                adInvoke1.src = '//www.highperformanceformat.com/c949739cfbc90099b78fd03e56e0c06f/invoke.js';
+                document.getElementById('ad-banner-1').appendChild(adInvoke1);
+                
+                // Ad Banner 2
+                const adScript2 = document.createElement('script');
+                adScript2.type = 'text/javascript';
+                adScript2.innerHTML = `
+                    atOptions = {
+                        'key': '03e7c2c2519ccd98f477369bfbbb04d2',
+                        'format': 'iframe',
+                        'height': 250,
+                        'width': 300,
+                        'params': {}
+                    };
+                `;
+                document.getElementById('ad-banner-2').appendChild(adScript2);
+                
+                const adInvoke2 = document.createElement('script');
+                adInvoke2.type = 'text/javascript';
+                adInvoke2.src = '//www.highperformanceformat.com/03e7c2c2519ccd98f477369bfbbb04d2/invoke.js';
+                document.getElementById('ad-banner-2').appendChild(adInvoke2);
+                
+                // Ad Banner 3
+                const adScript3 = document.createElement('script');
+                adScript3.type = 'text/javascript';
+                adScript3.innerHTML = `
+                    atOptions = {
+                        'key': 'dafe8afc0b0266d5b95a198608249118',
+                        'format': 'iframe',
+                        'height': 60,
+                        'width': 468,
+                        'params': {}
+                    };
+                `;
+                document.getElementById('ad-banner-3').appendChild(adScript3);
+                
+                const adInvoke3 = document.createElement('script');
+                adInvoke3.type = 'text/javascript';
+                adInvoke3.src = '//www.highperformanceformat.com/dafe8afc0b0266d5b95a198608249118/invoke.js';
+                document.getElementById('ad-banner-3').appendChild(adInvoke3);
+                
+                // Additional ad scripts
+                const additionalAdScript1 = document.createElement('script');
+                additionalAdScript1.type = 'text/javascript';
+                additionalAdScript1.src = '//pl26865081.profitableratecpm.com/3f/7c/da/3f7cdae06fb7910f8f7c01f3378a4291.js';
+                document.body.appendChild(additionalAdScript1);
+                
+                const additionalAdScript2 = document.createElement('script');
+                additionalAdScript2.type = 'text/javascript';
+                additionalAdScript2.src = '//pl26865068.profitableratecpm.com/28/5a/9d/285a9daf669638cc241d55b11a9022a8.js';
+                document.body.appendChild(additionalAdScript2);
+                
+                const additionalAdScript3 = document.createElement('script');
+                additionalAdScript3.type = 'text/javascript';
+                additionalAdScript3.innerHTML = `
+                    atOptions = {
+                        'key': 'a481763decb23c81da5296aea54b0fd9',
+                        'format': 'iframe',
+                        'height': 50,
+                        'width': 320,
+                        'params': {}
+                    };
+                `;
+                document.body.appendChild(additionalAdScript3);
+                
+                const additionalAdInvoke = document.createElement('script');
+                additionalAdInvoke.type = 'text/javascript';
+                additionalAdInvoke.src = '//www.highperformanceformat.com/a481763decb23c81da5296aea54b0fd9/invoke.js';
+                document.body.appendChild(additionalAdInvoke);
+                
+                const containerAdScript = document.createElement('script');
+                containerAdScript.async = true;
+                containerAdScript.dataset.cfasync = "false";
+                containerAdScript.src = "//pl26878749.profitableratecpm.com/8ba0df5614977aa78e67ac838ab7bb36/invoke.js";
+                document.body.appendChild(containerAdScript);
+                
+                const containerDiv = document.createElement('div');
+                containerDiv.id = "container-8ba0df5614977aa78e67ac838ab7bb36";
+                document.body.appendChild(containerDiv);
+                
+            } catch (error) {
+                console.error("Error loading ads:", error);
+            }
+        }
+
+        // Mobile menu toggle
+        function setupMobileMenu() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ? 
+                    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+            
+            // Close menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+        }
+
+        // Back to top button functionality
+        function setupBackToTop() {
+            const backToTop = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            
+            backToTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        function setupSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            renderApps();
+            loadAds();
+            setupMobileMenu();
+            setupBackToTop();
+            setupSmoothScrolling();
+        });
+
+        // Handle window resize events
+        window.addEventListener('resize', () => {
+            // You can add responsive adjustments here if needed
+        });
+    </script>
+</body>
+</html>
